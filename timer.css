@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -31,24 +34,28 @@ img {
 	margin-bottom: -100px;
 	border: 2px solid green;
 }
-
-p {
-	font-size: 25px;
+h1 {
+    font-family: 'Bakbak One', cursive;
+    letter-spacing: 5px;
+    color: rgb(97, 118, 255);
 }
-
+p {
+	font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
 #hr {
 	color: rgba(210, 30, 30, 0.822);
-	font-size: 40px;
+	font-size: 30px;
 	padding: 10px;
 }
 #min {
 	color: rgba(30, 195, 210, 0.822);
-	font-size: 40px;
+	font-size: 30px;
 	padding: 10px;
 }
 #sec {
 	color: rgba(255, 166, 0, 0.777);
-	font-size: 40px;
+	font-size: 30px;
 	padding: 10px;
 }
 
@@ -85,4 +92,5 @@ p {
 #btns {
 	display: flex;
 	gap: 50px;
+    margin-top: 10px;
 }
