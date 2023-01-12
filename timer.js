@@ -5,7 +5,7 @@ const secHtml = document.getElementById('sec')
 let sec = 0
 let min = 0
 let hr = 0
-let interval = null;
+let interval = null
 
 // printing 2 digits 00
 const twoDigits = (n) => {
@@ -28,14 +28,14 @@ const timer = () => {
 }
 
 const start = () => {
-    if (interval === null) {
-        interval = setInterval(timer, 1000)
-     }
+	if (interval === null) {
+		interval = setInterval(timer, 1000)
+	}
 }
 
 const stop = () => {
-    if (interval !== null) {
-        clearInterval(interval)
-        interval = null
-     }
-} 
+	if (interval !== null) {
+		clearInterval(interval)
+		interval = null
+	}
+}
