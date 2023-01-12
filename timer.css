@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url('https://css.gg/play-button.css');
+@import url('https://css.gg/play-pause.css');
+@import url('https://css.gg/redo.css');
+
 
 * {
 	margin: 0;
@@ -62,10 +66,15 @@ p {
 #start {
 	background-color: rgba(0, 255, 119, 0.548);
 	border: none;
-	padding: 20px 40px;
+	padding: 20px 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	font-size: 20px;
 	color: white;
 	font-weight: 900;
+    height: 100%;
 }
 #start:hover {
 	scale: 1.1;
@@ -77,10 +86,15 @@ p {
 #stop {
 	background-color: rgba(255, 0, 0, 0.548);
 	border: none;
-	padding: 20px 40px;
+	padding: 20px 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	font-size: 20px;
 	color: white;
 	font-weight: 900;
+    height: 100%;
 }
 #stop:hover {
 	scale: 1.1;
@@ -89,8 +103,35 @@ p {
 	cursor: pointer;
 }
 
+#reset {
+	background-color: rgba(35, 0, 97, 0.607);
+	border: none;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	color: white;
+    border-radius: 40px;
+}
+#reset:hover {
+	scale: 1.1;
+	transition: all;
+	transition-duration: 0.2s;
+	cursor: pointer;
+}
 #btns {
 	display: flex;
-	gap: 50px;
+    align-items: center;
+	gap: 30px;
     margin-top: 10px;
+}
+
+
+
+.gg-play-button {
+    transform: scale(var(--ggs,3));
+}
+.gg-play-pause {
+    transform: scale(var(--ggs,3));
 }
