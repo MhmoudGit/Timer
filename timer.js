@@ -38,4 +38,4 @@ const stop = () => {
         clearInterval(interval)
         interval = null
      }
-}
+} 
