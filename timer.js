@@ -39,3 +39,12 @@ const stop = () => {
 		interval = null
 	}
 }
+
+const restart = () => {
+	sec = 0
+	min = 0
+	hr = 0
+    secHtml.innerHTML = twoDigits(sec)
+	minHtml.innerHTML = twoDigits(min)
+	hrHtml.innerHTML = twoDigits(hr)
+}
